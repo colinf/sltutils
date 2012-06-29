@@ -1,0 +1,8 @@
+http-server
+.DS_Store
+node_modules
+dump.rdb
+npm-debug.log
+*.tgz
+*.sublime-project
+*.sublime-workspace

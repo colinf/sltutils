@@ -1,0 +1,32 @@
+!!! 5
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		link(rel="stylesheet", href="/datecalc/css/styles.css")
+		script(type="text/javascript", src="/datecalc/js/jquery-1.7.2.min.js")
+		script(type="text/javascript", src="/datecalc/js/jquery-ui-1.8.21.custom.min.js")
+		script(type="text/javascript", src="/datecalc/js/templates.js")
+		script(type="text/javascript", src="/datecalc/js/ch-date.js")
+		title Age Calculator
+	body
+		#dateapp
+			#header
+				h1 Child Health Age Calculator
+				label(for="dob-picker") Date of birth
+				input#dob-picker(type="text", placeholder="dd/mm/yyyy or use calendar icon")
+				label(for="to-picker") To date
+				input#to-picker(type="text")
+				button#calculate Calculate Age
+
+			#main.ui-widget.ui-widget-content.ui-corner-all
+				h3 Results
+				dl#age-list
+
+			#footer.ui-state-error.ui-corner-all
+				span.ui-icon.ui-icon-alert
+				span#error-message
+
+		#credits
+			| Beta version, suitable for testing only
+			br
+			a(href="https://github.com/colinf/couchbone-todos") source code on github

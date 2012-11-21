@@ -1,0 +1,12 @@
+.DS_Store
+Makefile
+component.json
+index.js
+ages.js
+components
+node_modules
+dump.rdb
+npm-debug.log
+*.sublime-project
+*.sublime-workspace
+!routes/index.js

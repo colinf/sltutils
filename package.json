@@ -2,7 +2,7 @@
   "name": "sltutils",
   "description": "A collection of utilities for speech & language therapists",
   "author": "Colin Fallon <sltutils@colinfallon.com>",
-  "version": "0.0.3",
+  "version": "0.0.3-10",
   "subdomain": "sltutils",
   "scripts": {
     "start": "node app.js"

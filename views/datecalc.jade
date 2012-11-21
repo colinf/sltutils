@@ -1,0 +1,43 @@
+extends layout
+
+block content
+  #dateapp
+    #header
+      h1 Child Health Age Calculator
+    #entry
+      label(for="dob-picker") Date of birth
+      #dob-entry
+        input#dob-dd.wem2(type="text", maxlength="2", placeholder="DD")
+        span.slash /
+        input#dob-mm.wem2(type="text", maxlength="2", placeholder="MM")
+        span.slash /
+        input#dob-yyyy.wem4(type="text", maxlength="4", placeholder="YYYY")
+        img#pick-dob.icon-trigger(src="/images/calendar.png")
+      label(for="to-picker") To date
+      #to-entry
+        input#to-dd.wem2(type="text", maxlength="2", placeholder="DD")
+        span.slash /
+        input#to-mm.wem2(type="text", maxlength="2", placeholder="MM")
+        span.slash /
+        input#to-yyyy.wem4(type="text", maxlength="4", placeholder="YYYY")
+        img#pick-to.icon-trigger(src="/images/calendar.png")
+      button#calculate Calculate Age
+
+    #results
+      h3 Results
+      #age-list
+        .age-item(data-qrepeat="m items")
+          span.title(data-qtext="m.title")
+          span.value(data-qtext="m.value")
+
+    #footer.ui-state-error.ui-corner-all
+      span.ui-icon.ui-icon-alert
+      span#error-message
+
+  #credits
+    | Beta version, suitable for testing only
+    br
+    a(href="https://github.com/colinf/sltutils") source code on github
+  script(src='/build/build.js')
+  script
+    require('sltutils');

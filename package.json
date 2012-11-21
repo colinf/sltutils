@@ -1,0 +1,16 @@
+{
+  "name": "sltutils",
+  "description": "A collection of utilities for speech & language therapists",
+  "author": "Colin Fallon <sltutils@colinfallon.com>",
+  "version": "0.0.3",
+  "subdomain": "sltutils",
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "express": "3.0.x",
+    "jade": "0.27.x",
+    "stylus": "0.30.x",
+    "nib": "0.8.x"
+  }
+}

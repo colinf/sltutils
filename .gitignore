@@ -1,5 +1,6 @@
-http-server
 .DS_Store
+components
+public/build
 node_modules
 dump.rdb
 npm-debug.log

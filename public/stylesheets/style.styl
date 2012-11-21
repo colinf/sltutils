@@ -1,0 +1,118 @@
+@import 'nib/vendor'
+@import 'nib/gradients'
+@import 'buttons'
+
+html
+body 
+  margin 0
+  padding 0
+
+body 
+  font 14px "Helvetica Neue", Helvetica, Arial, sans-serif
+  background #eeeeee
+  color #333333
+  width 520px
+  margin 0 auto
+  -webkit-font-smoothing antialiased
+
+#dateapp 
+  background #fff
+  padding 20px
+  margin-bottom 40px
+  box-shadow rgba(0, 0, 0, 0.2) 0 2px 6px 0
+  border-radius 0 0 5px 5px
+  h1 
+    font-size 30px
+    font-weight bold
+    text-align center
+    margin-top 5px
+    margin-bottom 5px
+  input[type="text"] 
+    font-size 24px
+    font-family inherit
+    line-height 1.4em
+    border 0
+    outline none
+    padding-left 4px
+    border 1px solid #999999
+    box-shadow rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset
+  input::-webkit-input-placeholder 
+    font-style italic
+  #calculate
+    bold-button(#111)
+    margin 15px 0 10px 0
+    font-family inherit
+
+#results 
+  display none
+  background #191919
+  color #e6e6e6
+  padding 10px
+  border-radius 5px
+  h3
+    font-size 18px
+    font-weight bold
+  #age-list 
+    margin 10px 0
+    padding 0
+    .age-item
+      padding-bottom 16px
+      span.value 
+        padding 8px 20px 18px 0
+        position relative
+        margin-left 20px
+        font-size 20px
+      span.title
+        display block
+        padding 6px
+        position relative
+        border-top 1px solid #cccccc
+      span.title:first-child
+        padding-top 0
+        border-bottom none
+
+#dateapp #footer 
+  display none
+  margin 0 -20px -20px -20px
+  overflow hidden
+  color #555555
+  background #f4fce8
+  border-top 1px solid #ededed
+  padding 0 20px
+  line-height 37px
+  border-radius 0 0 5px 5px
+
+#entry
+  font-size 24px
+  padding 5px 0 0 100px
+
+#entry label
+  font-size 14px
+  display block
+  padding-top 10px
+
+#instructions 
+  margin 10px auto
+  color #777777
+  text-shadow rgba(255, 255, 255, 0.8) 0 1px 0
+  text-align center
+  a 
+    color #336699
+
+#credits 
+  margin 30px auto
+  color #999
+  text-shadow rgba(255, 255, 255, 0.8) 0 1px 0
+  text-align center
+  a 
+    color #888
+
+.slash
+  margin 0 1px
+.icon-trigger
+  margin-left: 1px
+  vertical-align middle
+
+for w in 2 4
+  .wem{w}
+    width (w)em

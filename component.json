@@ -1,0 +1,16 @@
+{
+  "name": "sltutils",
+  "version": "0.1",
+  "dependencies": {
+    "component/calendar": "*",
+    "colinf/darktone": "*",
+    "colinf/datepicker": "*",
+    "colinf/datecalc": "*",
+    "colinf/distal": "*",
+    "component/jquery": "*"
+  },
+  "scripts": [
+    "index.js",
+    "ages.js"
+  ]
+}
